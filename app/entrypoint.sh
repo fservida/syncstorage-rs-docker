@@ -42,7 +42,7 @@ syncstorage.enabled = true
 
 tokenserver.database_url = "${SYNC_TOKENSERVER_DATABASE_URL}"
 tokenserver.enabled = true
-tokenserver.fxa_email_domain = "api.accounts.firefox.com"
+tokenserver.fxa_email_domain = "${SYNC_TOKENSERVER_FXA_EMAIL_DOMAIN:-api.accounts.firefox.com}"
 tokenserver.fxa_metrics_hash_secret = "${METRICS_HASH_SECRET}"
 tokenserver.fxa_oauth_server_url = "${SYNC_TOKENSERVER_FXA_OAUTH_SERVER_URL:-https://oauth.accounts.firefox.com}"
 tokenserver.fxa_browserid_audience = "https://token.services.mozilla.com"
